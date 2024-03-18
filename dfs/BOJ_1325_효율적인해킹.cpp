@@ -8,22 +8,6 @@ vector<int> com;
 bool vis[10005];
 int cnt[10005];
 
-void bfs(int x){
-    queue<int> q;
-    q.push(x);
-
-    while(!q.empty()){
-        int cur = q.front();
-        q.pop();
-        for(int nxt : e[cur]){
-            if(vis[nxt]) continue;
-            vis[nxt] = true;
-            q.push(nxt);
-            cnt[x]++;
-        }
-    }
-}
-
 //재귀
 int k = 0;
 void dfs(int cur){
