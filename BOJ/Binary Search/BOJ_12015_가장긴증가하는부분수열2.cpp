@@ -3,7 +3,7 @@
 using namespace std;
 
 int n;
-int a[1000005];
+int a[1'000'005];
 vector<int> v;  //v[i]가 의미하는 것은 가장 증가하는 배열의 길이가 (i + 1)일 때 가장 뒤에 오는 원소의 값의 최소값이다.
 
 int main() {
