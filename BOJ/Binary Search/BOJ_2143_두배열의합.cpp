@@ -18,7 +18,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    //배열의 합을 벡터에 넣을 때 삼중 for문을 돌지 않고, 이중 for문을 돌도록 최적화를 하는게 좋은 코드이다.
+    //배열의 합을 벡터에 넣을 때 삼중 for문을 돌지 않고, 이중 for문을 돌도록 최적화를 하는게 좋은 코드
     for (int i = 0; i < n; i++) {
         int sum = 0;
         for(int j = i; j < n; j++){
