@@ -3,7 +3,7 @@
 using namespace std;
 
 int n;  
-int a[100005];
+int a[100'005];
 
 int main() {
     ios::sync_with_stdio(0);
@@ -13,8 +13,8 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    int ans1 = 1000000000;
-    int ans2 = 1000000000;
+    int ans1 = 1'000'000'000;
+    int ans2 = 1'000'000'000;
 
     for (int i = 0; i < n; i++) {   
         int idx = lower_bound(a, a + n, -a[i]) - a;
