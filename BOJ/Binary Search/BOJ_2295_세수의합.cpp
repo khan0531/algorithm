@@ -22,19 +22,13 @@ int main() {
         }
     }
     sort(a1, a1 + n*(n + 1) / 2);
-    // for (int i = 0; i < n*(n + 1) / 2; i++) {
-    //     cout << a1[i] << ' ' << '\n';
-    // }
 
     for (int i = n - 1; i >= 0; i--) {
-        bool exist = false;
         for (int j = 0; j < n; j++) {
             if(binary_search(a1, a1 + n*(n + 1)/2, a[i] - a[j])){
                 cout << a[i] << '\n';
-                exist = true;
-                break;
+                return 0;
             }
         }
-        if(exist) break;
     }
 }
