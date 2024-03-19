@@ -14,12 +14,11 @@ int main() {
         cin >> a[i];
     }
     sort(a, a + n);
-    long long ans1 = 1000000001;
-    long long ans2 = 1000000001;
-    long long ans3 = 1000000001;
+    long long ans1 = 1'000'000'001;
+    long long ans2 = 1'000'000'001;
+    long long ans3 = 1'000'000'001;
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            if(i == j) continue;
+        for (int j = i + 1; j < n; j++) {
             long long x = a[i] + a[j];
             int idx = lower_bound(a, a + n, -x) - a;
             if(idx < n && idx != i && idx != j && abs(a[idx] + x) < abs(ans1 + ans2 + ans3)){
