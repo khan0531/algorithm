@@ -26,13 +26,13 @@ int main() {
     while(n--) {
         int v, c, k;
         cin >> v >> c >> k;
-        int j = 1;
+        int j = 1; // 이진 분해 시작 값 (2의 0제곱)
         int temp;
         while(k > 0){
-            temp = min(k, j);
-            p.push_back({v*temp, c*temp});
-            j *= 2;
-            k -= temp;
+            temp = min(k, j);  // 현재 단계에서 처리할 수 있는 최대 항목 개수
+            p.push_back({v*temp, c*temp}); // 이진 분해된 항목을 p 벡터에 추가
+            j *= 2; // 다음 이진 분해 단계로 이동 (2의 거듭제곱 증가)
+            k -= temp; // 남은 항목 개수 감소
         }
     }
 
