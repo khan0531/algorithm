@@ -3,11 +3,11 @@
 using namespace std;
 
 int n, ans;
-int a[1000005];
-int d[1000005];
-int id[1000005]; //idx 저장
-int pre[1000005]; //바로 이전 idx 불러오는 함수
-int idx;
+int a[1'000'005];
+int d[1'000'005]; //각 길이를 가질 때의 최소 마지막 값
+int id[1'000'005]; //각 길이를 가질 때의 마지막 값의 인덱스
+int pre[1'000'005]; //해당 인덱스의 수가 선택되었을 때, 바로 이전에 선택된 수의 인덱스
+int idx; // 현재 수 a[i]가 들어갈 수 있는 위치
 
 int main() {
     ios::sync_with_stdio(0);
