@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "deque": "cpp",
+        "ios": "cpp",
+        "queue": "cpp",
+        "iosfwd": "cpp",
+        "regex": "cpp",
+        "vector": "cpp",
+        "string": "cpp",
+        "random": "cpp",
+        "tuple": "cpp",
+        "stack": "cpp"
+    },
+    "workbench.colorTheme": "Default Dark+"
+}
