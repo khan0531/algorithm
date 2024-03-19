@@ -19,7 +19,7 @@ int main() {
     sort(a.begin(), a.end());
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
-            long long cnt = upper_bound(a.begin() + j + 1, a.begin() + n, -(a[i]+ a[j])) - lower_bound(a.begin() + j + 1, a.begin() + n, -(a[i]+ a[j]));
+            long long cnt = upper_bound(a.begin() + j + 1, a.end(), -(a[i]+ a[j])) - lower_bound(a.begin() + j + 1, a.end(), -(a[i]+ a[j]));
             ans += cnt;
         }
     }
