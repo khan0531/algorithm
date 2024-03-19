@@ -5,7 +5,7 @@ using namespace std;
 int n, m;
 string s[1005];
 int board[1005][1005];
-int d[1005][1005]; //i,j 를 포함하는 사각형의 한변의 길이
+int d[1005][1005]; //i,j 를 오른쪽 아래 꼭지점으로 포함하는 사각형의 한변의 길이
 int ans;
 
 int main() {
@@ -27,10 +27,6 @@ int main() {
             ans = max(ans, d[i][j]);
         }
     }
-    // for (int i = 0; i < n; i++) {
-    //     for (int j = 0; j < m; j++) {
-    //         ans = max(ans, d[i][j]);
-    //     }
-    // }
+    
     cout << ans*ans;
 }
