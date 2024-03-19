@@ -13,8 +13,8 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    int ans1 = 1'000'000'000;
-    int ans2 = 1'000'000'000;
+    int ans1 = 1'000'000'005;
+    int ans2 = 1'000'000'005;
 
     for (int i = 0; i < n; i++) {   
         int idx = lower_bound(a, a + n, -a[i]) - a;

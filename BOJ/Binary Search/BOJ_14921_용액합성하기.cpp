@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int a[100005];
+int a[100'005];
 
 int main() {
     ios::sync_with_stdio(0);
@@ -12,8 +12,8 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    int ans1 = 100000000;
-    int ans2 = 100000000;
+    int ans1 = 100'000'005;
+    int ans2 = 100'000'005;
     for (int i = 0; i < n; i++) {
         int idx = lower_bound(a, a + n, -a[i]) - a;
         if(idx < n && idx != i && abs(a[i] + a[idx]) < abs(ans1 + ans2)){
