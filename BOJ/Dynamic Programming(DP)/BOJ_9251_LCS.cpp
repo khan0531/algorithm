@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int dp[1'005][1'005];
+int dp[1'005][1'005]; // dp[i][j] : 첫번째 문자열에서 i번째 문자까지 탐색, 두번째 문자열에서 j번째 문자까지 탐색 했을 때의 LCS 값
 
 int main() {
     ios::sync_with_stdio(0);
